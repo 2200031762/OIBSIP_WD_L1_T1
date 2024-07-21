@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celine Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+        }
+
+        .campaign-heading {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .refine-options {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .refine-options label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .refine-options select {
+            width: 200px;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        .product-img {
+            width: 100%; /* Adjust image width to be responsive */
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 10px; /* Add border radius for rounded corners */
+        }
+
+        .product-info {
+            margin-top: 20px;
+        }
+
+        .product-info p {
+            margin-bottom: 5px;
+        }
+
+        .roman {
+            font-style: normal; /* Change font style to normal (roman) */
+        }
+
+        .product {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0; /* Light background color */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            margin-bottom: 20px; /* Spacing between products */
+        }
+
+        .product p {
+            color: #444; /* Darker text color for product details */
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px; /* Adjust height as needed */
+            background-color: #000000; /* Dark background color */
+            color: #fff; /* White text color */
+            font-size: 24px; /* Adjust font size */
+            font-weight: bold; /* Bold text */
+            text-transform: uppercase; /* Uppercase text */
+        }
+
+        .shop-button {
+            background-color: #000000; /* Black background color */
+            color: #ffffff; /* White text color */
+            padding: 10px 20px; /* Padding for button */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Cursor style */
+            font-size: 16px; /* Font size */
+            text-transform: uppercase; /* Uppercase text */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+
+        .shop-button:hover {
+            background-color: #333333; /* Darker background color on hover */
+            color: #ffffff; /* White text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Celine
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product-section">
+            <h1 class="campaign-heading"><span class="roman">V (Kim Taehyung) <br> in Celine </span><br> </h1>
+            <p>Discover the collection featuring iconic styles with a distinctive energy.</p>
+
+            <div class="refine-options">
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="overcoats">Overcoats (1)</option>
+                    <option value="tops">Tops (1)</option>
+                    <option value="bottoms">Bottoms (2)</option>
+                    <option value="sneakers">Sneakers (1)</option>
+                    <option value="Hoodies">Hoodies(1)</option>
+                    <option value="BackPack">BackPack(1)</option>
+                </select>
+
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="xs">XS (16)</option>
+                    <option value="s">S (18)</option>
+                    <option value="m">M (16)</option>
+                    <option value="l">L (16)</option>
+                    <option value="xl">XL (16)</option>
+                    <option value="xxl">XXL (15)</option>
+                    <option value="29">29 (4)</option>
+                    <option value="30">30 (7)</option>
+                    <option value="31">31 (8)</option>
+                    <option value="32">32 (9)</option>
+                    <option value="33">33 (9)</option>
+                    <option value="34">34 (10)</option>
+                    <option value="36">36 (8)</option>
+                    <option value="38">38 (2)</option>
+                    <option value="40">40 (1)</option>
+                </select>
+
+                <label for="price">Price:</label>
+                <select id="price">
+                    <option value="$1500-$2000">$1500 - $2000 (1)</option>
+                    <option value="$2000-$2500">$2000 - $2500 (4)</option>
+                    <option value="$2500-$3000">$2500 - $3000 (17)</option>
+                    <option value="$3000-$3500">$3000 - $3500 (4)</option>
+                    <option value="$3500+">$3500+ (2)</option>
+                </select>
+                
+                <label for="sort">Sort by:</label>
+                
+                <select id="sort">
+                    <option value="featured">Featured</option>
+                    <option value="popular">Popular</option>
+                </select>
+            </div>
+
+            <div class="product-row">
+                <div class="product">
+                    <img src="https://www.allkpop.com/upload/2023/04/content/101058/1681138692-340178036-680733697191496-6129194779371516185-n.jpg" alt="Taehyung's Chic Ensemble" class="product-img">
+                    <p>Over-long coat</p>
+                    <p>Black mesh knit top</p>
+                    <p>Denim pants</p>
+                    <p>Heeled boots</p>
+                    <button class="shop-button">Shop Now</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5a15ad16b7411ccec818471e/1680150613906-O4EG9CT067JI61A7FB2U/Kolor+Magazine+TAEHYUNG+X+CELINE+3.png?format=1500w" alt="Sneakers" class="product-img">
+                    <p>Stylish Sneakers</p>
+                    <p>Comfort and fashion combined.</p>
+                    <button class="shop-button">Shop Now</button>
+                </div>
+            </div>
+            <div class="product-row">
+                <div class="product">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5a15ad16b7411ccec818471e/1680150611939-2GY8MAC7TUNFYF0J8QZB/Kolor+Magazine+TAEHYUNG+X+CELINE+1.png?format=1500w" alt="Hoodies" class="product-img">
+                    <p>Sweatshirts and Hoodies</p>
+                    <p>Comfortable and casual layers.</p>
+                    <button class="shop-button">Shop Now</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5a15ad16b7411ccec818471e/1680150616449-OA4PKVU14FCTJWPCUPYJ/Kolor+Magazine+TAEHYUNG+X+CELINE+8.png?format=1500w" alt="BackPack" class="product-img">
+                    <p>Leather Backpack</p>
+                    <p>Stylish and functional for everyday use.</p>
+                    <button class="shop-button">Shop Now</button>
+                </div>
+            </div>
+            <div class="product-row">
+                <div class="product">
+                    <img src="https://enfntsterribles.com/wp-content/uploads/2022/07/ENFNTS-TERRIBLES-CELINE-HOMME-SUMMER-23-V-BTS9-480x600.jpg" alt="Overcoats" class="product-img">
+                    <p>Modern overcoats</p>
+                    <p>Elegant and warm for any occasion.</p>
+                    <button class="shop-button">Shop Now</button>
+                </div>
+                <div class="product">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/celine-cannes-2023-dinner-kim-taehyung-646cf73662b55.jpg?resize=980:*" alt="CoordSet" class="product-img">
+                    <p>Custom made Jacket</p>
+                    <p>Heeled Boots</p>
+                    <p>Classic look with a modern twist.</p>
+                    <button class="shop-button">Shop Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
